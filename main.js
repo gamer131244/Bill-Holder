@@ -55,7 +55,7 @@ document.querySelector(".menu-icon span").addEventListener("click", () => {
         compony: "Bill Manager"
       });
     } else {
-      img.src = "menu.svg";
+      img.src = "./menu.svg";
       document.querySelector(".menu-icon").style.background = "transparent";
       document.querySelector(".menu-btn-wrapper").style.zIndex = "auto";
       history.back();
@@ -75,8 +75,8 @@ document.querySelector(".size-project-icon span").addEventListener("click", () =
   
   setTimeout(() => {
     img.style.transform = "scale(1)";
-    if (img.src.includes("grid.svg")) {
-      img.src = `align-left.svg`;
+    if (img.src.includes("./grid.svg")) {
+      img.src = `./align-left.svg`;
       var parent = document.querySelector(".project-ul");
       if (parent.children.length > 1) {
         document.querySelectorAll(".project-card").forEach((card) => {
@@ -97,10 +97,10 @@ document.querySelector(".size-project-icon span").addEventListener("click", () =
           
         });
       } else {
-        img.src = `grid.svg`;
+        img.src = `./grid.svg`;
       }
     } else {
-      img.src = "/grid.svg";
+      img.src = "./grid.svg";
       document.querySelectorAll(".project-card").forEach((card) => {
         card.style.width = "90vw";
         
