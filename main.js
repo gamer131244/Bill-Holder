@@ -1,9 +1,9 @@
-import { OptionList } from '/OptionList.js';
-import { RenameCard } from '/Rename Card.js';
-import { DeleteCard } from '/Delete Card.js';
-import { MenuBar } from '/MenuBar.js';
-import { CreateProject } from '/Create Project.js';
-import { SearchUI } from '/Search Ui.js';
+import { OptionList } from './OptionList.js';
+import { RenameCard } from './Rename Card.js';
+import { DeleteCard } from './Delete Card.js';
+import { MenuBar } from './MenuBar.js';
+import { CreateProject } from './Create Project.js';
+import { SearchUI } from './Search Ui.js';
 
 
 
@@ -50,7 +50,7 @@ document.querySelector(".menu-icon span").addEventListener("click", () => {
         compony: "Bill Manager"
       });
     } else {
-      img.src = "/menu.svg";
+      img.src = "menu.svg";
       document.querySelector(".menu-icon").style.background = "transparent";
       document.querySelector(".menu-btn-wrapper").style.zIndex = "auto";
       history.back();
