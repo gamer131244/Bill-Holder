@@ -1,3 +1,8 @@
+
+
+alert("This is Main.js Outer Work");
+
+
 import { OptionList } from './OptionList.js';
 import { RenameCard } from './Rename Card.js';
 import { DeleteCard } from './Delete Card.js';
